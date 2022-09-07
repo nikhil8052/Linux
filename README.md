@@ -1,3 +1,9 @@
+ 
+# Linux File System.
+
+![alt text](https://github.com/nikhil8052/Linux/blob/master/images/filesystem.png?raw=true)
+
+
 # Login as root.
 
     sudo su - 
@@ -17,7 +23,3 @@
             Restart your virtual machine. 
             Now,fire ifconfig. 
             You will be good to go now.
- 
-# Linux File System.
-
-![alt text](https://github.com/nikhil8052/Linux/blob/master/images/filesystem.png?raw=true)
