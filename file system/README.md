@@ -16,7 +16,7 @@
 
 # File Types.
 
-![alt text](https://github.com/nikhil8052/Linux/blob/master/images/file_types.png?raw=true)
+![alt text](https://github.com/nikhil8052/Linux/blob/master/images/file_types.jpg?raw=true)
 
 
 # Create new file. 
@@ -72,4 +72,4 @@ locate
     OS automatically update the DB.
 
     Database of the locate command can be updated by root only.
-    
+
