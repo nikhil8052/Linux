@@ -61,3 +61,15 @@ Find using locate in the current folder
     apt install mlocate.
 
     
+# Locate Vs Find command. 
+
+locate 
+
+    locate command has its own database,which should be regularly updated while find command 
+    iterate over the file system to locate or find the file.Thus, the locate command is much
+    faster than the find command but can give the inaccurate data if the db is not updated. 
+    We can update the db using the updatedb. if we don't do it so after a particular time 
+    OS automatically update the DB.
+
+    Database of the locate command can be updated by root only.
+    
