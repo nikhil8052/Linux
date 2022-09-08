@@ -13,3 +13,51 @@
 # Permissions 
 
 ![alt text](https://github.com/nikhil8052/Linux/blob/master/images/file_permissions.png?raw=true)
+
+# File Types.
+
+![alt text](https://github.com/nikhil8052/Linux/blob/master/images/file_types.png?raw=true)
+
+
+# Create new file. 
+
+touch <filename> <filename>
+
+It creates the empty file. 
+
+# Copy the one file to other. 
+
+cp <source-file> <distination-file>
+
+# Copy the Folders. 
+
+cp -R  <source-folder> <distination-folder>
+
+Here the -R specify the recusevily copy all the content of the folder to the other folder. 
+
+# Find Files and Directories in Linux.
+
+Using commands :- find,locate
+
+Start search from the root 
+    find / -name "test"
+
+Find in the current folder or sub-folders  
+    find . -name "test.cpp" 
+
+Find using locate in the current folder 
+    locate test.cpp 
+
+    locate command does not return any result so then as a root run --> updatedb.
+
+    Make sure that we have ( mlocate )  package installed.
+
+    To check whether installed or not please fire. 
+
+    rpm -qa | grep mlocate 
+
+    To install the package.
+
+    apt install mlocate.
+
+    
