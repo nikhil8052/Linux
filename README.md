@@ -86,7 +86,7 @@
     anything and the length of the string must be three. 
 
     ls -l a?c
-    
+
     - create 100 files which must be named as user1,user2,user3 and so on .
 
     touch user[1..100]
@@ -100,5 +100,57 @@
     b[!ae]ll
 
 
+# Soft Links Vs Hard Links 
+
+- Links :- Links are nothing but the shortcuts of accessing files.Links are used to refer the same file with multiple names.
+
+Note:- Soft link can be created for files and directories but hard link can only be created for files only not for directories. 
+
+- inode :- It's a number or a pointer to a file on the hard disk.
+
+ ls -i abc  (command to find the inode number of any file )
+ ls -di abc  (command to find the inode number of any directory )
+ find / -inum inode_number(Find all the locations )
+
+- Hard Link 
+
+    If the orignal file is deleted from the destination. We can access the same content using the 
+    Hard Link.
+
+    Links have actual file contents.
+
+    The size of any of the hard link file is same as the original file and if we change the content in any of the hard links then size of all hard link files are updated.
+
+    In hard link inode number remains the same as the orignal one.
+
+    Data reflects in the hard link if we change the hard linked refering file content it will automatically 
+    will be updated on the other locations as the inode number is same in this case.
+
+    Size remains same in the hard link.
+
+    Hard link cannot be created across the partitions.
+
+    ln  [original filename] [link name] 
+
+- Soft Link 
+
+    Link will be removed if the file is removed.
+
+    A soft link is similar to the file shortcut feature which is used in Windows Operating systems
+
+    Soft Link contains the path for original file and not the contents.
+
+    Removing soft link doesn’t affect anything but removing original file, the link becomes “dangling” link which points to nonexistent file.
+
+    A soft link can link to a directory.
+
+    The size of the soft link is equal to the length of the path of the original file 
+
+    If we change the name of the original file then all the soft links for that file become dangling i.e. they are worthless now.
+
+    ln  -s [original filename] [link name] 
 
 
+# Check OS version 
+
+    - cat /etc/system-release
