@@ -63,3 +63,42 @@
             You will be good to go now.
 
 
+
+# How to change password. 
+
+    passwd username (cammand)
+
+    It will fisrt ask for your old password and then you need to enter your new password.
+
+# Wild Card in Linux.
+
+    Wild Card :- Wild card is nothing but a character which is used to represent one or more character.It is used for searches,creating multiple files, deleting multiple files etc.Linux provides many wild cards
+    to work with. 
+
+    * :- Represent the one or more characters. 
+    ? :- Represents the Single Character.
+    [] :- Represents the range of characters.
+    !  :- Excludes characters inside the brackets.
+
+    Examples 
+
+    - Find files which has a in the beginning and end in the end and middle character can be 
+    anything and the length of the string must be three. 
+
+    ls -l a?c
+    
+    - create 100 files which must be named as user1,user2,user3 and so on .
+
+    touch user[1..100]
+
+    - Search file which has ab in the beginning.
+
+    ls -l ab*
+
+    - finds bill and bull, but not ball or bell
+
+    b[!ae]ll
+
+
+
+
