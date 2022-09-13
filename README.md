@@ -154,3 +154,62 @@ Note:- Soft link can be created for files and directories but hard link can only
 # Check OS version 
 
     - cat /etc/system-release
+
+
+# Command Syntax
+
+- command -options -arguments 
+
+- Command contains option and arguments.
+
+- Options :- It modify the way of working of a command. It usually contains a hyphen or dash symbal followed
+ by a single character.Some commands contains multiple options which can be grouped together after the hyphen.
+
+- Arguments :- Some command assumne default argument if non is supplied.Arguments are optinal for some commands and required for some .
+
+- Example :- 
+
+   ls -ltr (ltr are the options to the command which specify listing out the things in decending order of time.)
+
+   ls -l test (here file name test is an argument to the listing command )
+
+   rm -f test (Remove the file forcefully) 
+
+   rm -r (To remove a directory)
+
+# Get info about the command 
+
+- man ls (Gives the manual of ls command.)
+
+# Files and Directory Permissions 
+
+- Unix is a multi-user system. Every user has files and directory own by him/her.Every file and directory can be protected to to make accessibe to other users by changing the file permissions.
+
+- There are three types of permissions.
+    -r read 
+    -x execute or running a program 
+    -w write 
+
+- Each permission can be controlled at three levels .
+
+    user - Yourself.   (u)
+    group - can be people in the same project. (g)
+    other - Everyone   (o)
+
+Permissions can be shown by ls -l command 
+
+![alt text](https://github.com/nikhil8052/Linux/blob/master/images/file_users_mode.png?raw=true)
+
+# command to change permissions of a file and directory 
+
+- chmod 
+
+- Example 
+
+    chmod g -w test (Remove the write  permission from the group.)
+
+    chmod a-r (Remove read permission from all (User,Group,Others))
+
+    chmod u+rw (Give the read and write permission)
+
+    chmod g+rw (Give the read and write permission to group)
